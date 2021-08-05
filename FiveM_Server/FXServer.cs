@@ -11,14 +11,21 @@ namespace FiveM_Server
 		// Token: 0x06000001 RID: 1 RVA: 0x00002050 File Offset: 0x00000250
 		public FXServer()
 		{
-			API.RegisterCommand("volume", new Action<int, List<object>, string>(this.OnVolumeCmd), false);
-			API.RegisterCommand("play", new Action<int, List<object>, string>(this.OnVideoPlayCmd), false);
-			API.RegisterCommand("pause", new Action<int, List<object>, string>(this.OnVideoPauseCmd), false);
-			API.RegisterCommand("stop", new Action<int, List<object>, string>(this.OnVideoStopCmd), false);
-			API.RegisterCommand("vtime", new Action<int, List<object>, string>(this.OnVideoTimeCmd), false);
-			API.RegisterCommand("url", new Action<int, List<object>, string>(this.OnUrlCmd), false);
-			API.RegisterCommand("yt", new Action<int, List<object>, string>(this.OnYTCmd), false);
-			API.RegisterCommand("player", new Action<int, List<object>, string>(this.OnPlayerCmd), false);
+            API.RegisterCommand("volume", new Action<int, List<object>, string>(this.OnVolumeCmd), false);
+
+            API.RegisterCommand("play", new Action<int, List<object>, string>(this.OnVideoPlayCmd), false);
+
+            API.RegisterCommand("pause", new Action<int, List<object>, string>(this.OnVideoPauseCmd), false);
+
+            API.RegisterCommand("stop", new Action<int, List<object>, string>(this.OnVideoStopCmd), false);
+
+            API.RegisterCommand("vtime", new Action<int, List<object>, string>(this.OnVideoTimeCmd), false);
+
+            API.RegisterCommand("url", new Action<int, List<object>, string>(this.OnUrlCmd), false);
+
+            API.RegisterCommand("yt", new Action<int, List<object>, string>(this.OnYTCmd), false);
+
+            API.RegisterCommand("player", new Action<int, List<object>, string>(this.OnPlayerCmd), false);
 		}
 
 		// Token: 0x06000002 RID: 2 RVA: 0x00002144 File Offset: 0x00000344
@@ -44,11 +51,12 @@ namespace FiveM_Server
 			{
 				foreach (Player player in base.Players)
 				{
-					player.TriggerEvent("Video:Play", new object[]
-					{
-						(string)args[0]
+                    Debug.WriteLine("did this work");
+                    player.TriggerEvent("Video:Play", new object[]
+                    {
+                        (string)args[0]
 					});
-				}
+                }
 			}
 		}
 
@@ -191,8 +199,7 @@ namespace FiveM_Server
 		// Token: 0x04000001 RID: 1
 		public static string[] AllowedPlayers = new string[]
 		{
-			"steam:11000010610ca2d",
-			"steam:11000010f3457b0"
+            "steam:11000010d973cb3"
 		};
 	}
 }

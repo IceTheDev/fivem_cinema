@@ -49,12 +49,12 @@ namespace NativeUI
 			{
 				return;
 			}
-			if (!Function.Call<bool>(91750494399812324L, new InputArgument[]
+			if (!Function.Call<bool>(Hash.REGISTER_NUI_CALLBACK_TYPE, new InputArgument[]
 			{
 				this.TextureDict
 			}))
 			{
-				Function.Call(-2332038263791780395L, new InputArgument[]
+				Function.Call(Hash.REGISTER_NUI_CALLBACK_TYPE, new InputArgument[]
 				{
 					this.TextureDict,
 					true
@@ -68,7 +68,7 @@ namespace NativeUI
 			float num4 = this.Size.Height / 1080f;
 			float num5 = this.Position.X / num2 + num3 * 0.5f;
 			float num6 = this.Position.Y / 1080f + num4 * 0.5f;
-			Function.Call(-1729472009930024816L, new InputArgument[]
+			Function.Call(Hash.REGISTER_NUI_CALLBACK_TYPE, new InputArgument[]
 			{
 				this.TextureDict,
 				this.TextureName,
@@ -87,12 +87,12 @@ namespace NativeUI
 		// Token: 0x06000006 RID: 6 RVA: 0x00002270 File Offset: 0x00000470
 		public static void Draw(string dict, string name, int xpos, int ypos, int boxWidth, int boxHeight, float rotation, Color color)
 		{
-			if (!Function.Call<bool>(91750494399812324L, new InputArgument[]
+			if (!Function.Call<bool>(Hash.REGISTER_NUI_CALLBACK_TYPE, new InputArgument[]
 			{
 				dict
 			}))
 			{
-				Function.Call(-2332038263791780395L, new InputArgument[]
+				Function.Call(Hash.REGISTER_NUI_CALLBACK_TYPE, new InputArgument[]
 				{
 					dict,
 					true
@@ -106,7 +106,7 @@ namespace NativeUI
 			float num4 = (float)boxHeight / 1080f;
 			float num5 = (float)xpos / num2 + num3 * 0.5f;
 			float num6 = (float)ypos / 1080f + num4 * 0.5f;
-			Function.Call(-1729472009930024816L, new InputArgument[]
+			Function.Call(Hash.REGISTER_NUI_CALLBACK_TYPE, new InputArgument[]
 			{
 				dict,
 				name,

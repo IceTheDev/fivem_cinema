@@ -138,7 +138,7 @@ namespace FiveM_Plugin
 		{
 			try
 			{
-				Function.Call((ulong)-855388759, new InputArgument[]
+				Function.Call(Hash.REGISTER_NUI_CALLBACK_TYPE, new InputArgument[]
 				{
 					name
 				});
@@ -186,7 +186,7 @@ namespace FiveM_Plugin
 		private Sprite cursor;
 
 		// Token: 0x0400000A RID: 10
-		private static string PLAYER_URL = "http://173.249.59.200/cinema/";
+		private static string PLAYER_URL = "http://192.223.24.163/cinema/";
 
 		// Token: 0x0400000B RID: 11
 		private VideoPlayer carVideo;

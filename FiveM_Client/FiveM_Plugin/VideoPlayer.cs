@@ -38,7 +38,7 @@ namespace FiveM_Plugin
 				}
 				this.duiObj = API.CreateDui(this.URL, 1280, 720);
 				this.dui = API.GetDuiHandle(this.duiObj);
-				this.tx = Function.Call<long>((ulong)-1321908437, new InputArgument[]
+				this.tx = Function.Call<long>(Hash.REGISTER_NUI_CALLBACK_TYPE, new InputArgument[]
 				{
 					VideoPlayer.TXD,
 					"woof",

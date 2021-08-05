@@ -1,0 +1,8 @@
+Z:\cool dev files\fivem_cinema-master\FiveM_Server\bin\Debug\CitizenFX.Core.dll
+Z:\cool dev files\fivem_cinema-master\FiveM_Server\obj\Debug\FiveM_Server.csprojResolveAssemblyReference.cache
+Z:\cool dev files\fivem_cinema-master\FiveM_Server\obj\Debug\FiveM_Server.csproj.CoreCompileInputs.cache
+Z:\cool dev files\fivem_cinema-master\FiveM_Server\obj\Debug\FiveM_Server.csproj.CopyComplete
+Z:\cool dev files\fivem_cinema-master\FiveM_Server\bin\Debug\FiveM_Server.net.dll
+Z:\cool dev files\fivem_cinema-master\FiveM_Server\bin\Debug\FiveM_Server.net.pdb
+Z:\cool dev files\fivem_cinema-master\FiveM_Server\obj\Debug\FiveM_Server.net.dll
+Z:\cool dev files\fivem_cinema-master\FiveM_Server\obj\Debug\FiveM_Server.net.pdb

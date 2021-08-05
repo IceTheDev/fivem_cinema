@@ -7,7 +7,7 @@
     <ProjectGuid>{30F488B6-04D2-4C03-963E-C285349903D0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>FiveM_Server</RootNamespace>
-    <AssemblyName>FiveM_Server</AssemblyName>
+    <AssemblyName>FiveM_Server.net</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,7 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CitizenFX.Core" />
+    <Reference Include="CitizenFX.Core">
+      <HintPath>.\CitizenFX.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <AppDesigner Include="Properties\" />
